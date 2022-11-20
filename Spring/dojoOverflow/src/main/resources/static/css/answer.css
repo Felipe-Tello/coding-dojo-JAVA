@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#tabla {
+	width: 50%;
+}
+
+.alinear{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#tag{
+	border: 2px solid black;
+}
+
+div{
+	margin: 20px;
+}
+
+h3 {
+	border: 2px solid black;
+	box-shadow: 3px 3px 3px black;
+	padding: 5px;
+	margin-left: 15px;
+	background-color: purple;
+}

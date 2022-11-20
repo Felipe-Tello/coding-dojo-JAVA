@@ -1,0 +1,57 @@
+<div>
+<!-- SELECIONAR TODOS LOS DATOS DE UNA TABLA -->
+SELECT * 
+FROM users; <!--(ACA PUEDE IR CUALQUIER NOMBRE DE TABLA)-->
+
+SELECT first_name, last_name <!--(SE PUEDEN SELECCIONAR UNA O VARIAS COLUMNAS PARA VER DATOS ESPECIFICOS)-->
+FROM users; 
+
+SELECT last_name
+FROM users
+WHERE id = 2 OR id = 3; <!--(SE PUEDEN APLICAR CONDICIONALES PARA VER LOS DATOS, EN ESTE CASO LOS ID)-->
+
+SELECT * 
+FROM users
+WHERE first_name LIKE "K%"; <!--(MISMO CASO QUE ARRIBA CON LA CONDICIONAL % PARA BUSQUEDA TEXTUAL)-->
+
+SELECT *
+FROM users
+ORDER BY birthday DESC; <!--(SE PUEDEN ORDENAR LOS DATOS CONSULTADOS, EN ESTE CASO DE MENOR A MAYOR)-->
+<!-- El valor predeterminado para ORDER BY es ASC -->
+
+SELECT *
+FROM users
+WHERE first_name LIKE "%e" <!--(MISMO CASO QUE ARRIBA CON LA CONDICIONAL % PARA BUSQUEDA TEXTUAL)-->
+ORDER BY birthday DESC;
+
+</div>
+<div>
+
+<!-- INSERTAR DATOS A UNA TABLA -->
+<!--(SE TIENE QUE INSERTA LOS DATOS EN EL ORDEN ESCRITO ANTERIORMENTE)-->
+
+</div>
+<div>
+
+<!-- BORRAR DATOS A UNA TABLA -->
+DELETE FROM table_name WHERE condition(s) <!--(SE ELIGE LA TABLA Y SE BORRA CON UNA CONDICIONAL)-->
+<!--IMPORTANTE: si la condición WHERE no se agrega a la instrucción DELETE, eliminará todos los registros de la tabla.-->
+
+</div>
+<div>
+    <!-- union de tablas -->
+
+    <!-- one to one -->
+    SELECT * FROM customers 
+    JOIN addresses ON addresses.id = customers.address_id;
+
+    <!-- one to many -->
+    SELECT * FROM orders 
+    JOIN customers ON customers.id = orders.customer_id;
+
+    <!-- many to many -->
+    SELECT * FROM orders 
+    JOIN items_orders ON orders.id = items_orders.order_id 
+    JOIN items ON items.id = items_orders.item_id;
+
+</div>

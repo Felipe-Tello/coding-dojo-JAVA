@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.alinear{
+	display: inline-block;
+	vertical-align: top;
+}
+
+div {
+	margin: 20px 0;
+}

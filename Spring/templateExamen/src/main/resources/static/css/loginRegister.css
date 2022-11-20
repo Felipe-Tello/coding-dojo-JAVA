@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+	
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.alinear{
+    display: inline-block;
+    vertical-align: top;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+    margin: 15px 10px;
+}
+
+
+.recuadro{
+    border: 2px solid black;
+    padding: 15px;
+}
+
+form input{
+    border: 2px solid black;
+}
+
+form select{
+    border: 2px solid black;
+}
+
+.moveButton{
+    margin-left: 70%;
+}
